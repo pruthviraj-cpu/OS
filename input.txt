@@ -1,0 +1,5 @@
+$AMJ000100030001
+GD10PD10H 
+$DTA                            
+HelloPranav
+$END0001
