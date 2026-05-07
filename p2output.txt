@@ -1,0 +1,42 @@
+*   
+*   *   
+*   *   *   
+*   *   
+*   
+
+
+JOB ID : 202
+LINE LIMIT EXCEED ERROR
+IC : 15
+IR : PD60
+TTC : 15
+LLC : 5
+CAT CAN RAT 
+
+
+
+JOB ID : 302
+NO ERROR
+IC : 10
+IR : H   
+TTC : 10
+LLC : 2
+
+
+JOB ID : 102
+INVALID PAGE FAULT
+IC : 2
+IR : LR36
+TTC : 2
+LLC : 0
+ABCD
+ABCD
+MATCH   
+
+
+JOB ID : 401
+TIME LIMIT EXCEED ERROR
+IC : 11
+IR : PD50
+TTC : 10
+LLC : 3
