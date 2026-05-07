@@ -390,7 +390,9 @@ void execute()
                     C = true;
                     for(int i = 0; i < 4; i++)
                     {
-                        if(R[i] != memory[realAddress][i]) { C = false; break; }
+                        if(R[i] != memory[realAddress][i])
+                         { C = false; break;
+                         }
                     }
                     cout << (C ? "Comparison TRUE" : "Comparison FALSE") << endl;
                 }
@@ -581,6 +583,7 @@ void terminate(int em)
     // printMemory();
 
     cout << "\nPROGRAM TERMINATED (EM=" << em << ")\n";
+    printMemory();
     
 }
 
@@ -590,6 +593,9 @@ void printMemory()
     cout << "\n+-------+----------+" << endl;
     cout << "| ADDR  |  CONTENT |" << endl;
     cout << "+-------+----------+" << endl;
+    // outfile << "\n+-------+----------+" << endl;
+    // outfile << "| ADDR  |  CONTENT |" << endl;
+    // outfile << "+-------+----------+" << endl;
 
     for(int i = 0; i < 300; i++)
     {
@@ -598,18 +604,22 @@ void printMemory()
             if(memory[i][j] != ' ') { empty = false; break; }
 
         cout << "| ";
+        // outfile << "| ";
+        
         if(i < 10)        cout << "  " << i;
         else if(i < 100)  cout << " "  << i;
         else              cout << i;
 
         cout << "   |  ";
-
+        // cout << "   |  ";
+        
         if(empty)
         {
             cout << "[    ]  |" << endl;
         }
         else
         {
+            cout<<R[0]<<R[1]<<R[2]<<R[3];
             cout << memory[i][0] << memory[i][1]
                  << memory[i][2] << memory[i][3]
                  << "    |" << endl;
